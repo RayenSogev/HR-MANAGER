@@ -52,7 +52,7 @@ export default function Conges({ user }) {
   const filtered = filter === "all" ? conges : conges.filter(c => c.worker_id === Number(filter))
 
   return (
-    <div style={{ padding: "24px 20px" }}>
+    <div style={{ padding: "20px 16px" }}>
       {toast && <Toast {...toast} />}
       <PageHeader
         title="Congés"

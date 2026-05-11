@@ -33,7 +33,7 @@ export default function Settings({ user, onSettingsChange }) {
   if (loading) return <Spinner />
 
   return (
-    <div style={{ padding: "24px 20px" }}>
+    <div style={{ padding: "20px 16px" }}>
       {toast && <Toast {...toast} />}
       <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 26, color: "#0f172a", marginBottom: 4 }}>Paramètres</div>
       <div style={{ fontSize: 13, color: "#94a3b8", marginBottom: 28 }}>Règles de paie globales</div>

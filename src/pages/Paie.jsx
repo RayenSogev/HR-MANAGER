@@ -73,7 +73,7 @@ export default function Paie({ settings }) {
   const totalNet   = pays.reduce((s, { pay }) => s + pay.netPay, 0)
 
   return (
-    <div style={{ padding: "24px 20px" }}>
+    <div style={{ padding: "20px 16px" }}>
       <PageHeader title="Paie" subtitle="Fiches de paie par employé" />
 
       {/* Month selector */}

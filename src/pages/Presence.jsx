@@ -85,7 +85,7 @@ export default function Presence({ user, settings }) {
   const calc = modal ? calcDisplay() : null
 
   return (
-    <div style={{ padding: "24px 20px" }}>
+    <div style={{ padding: "20px 16px" }}>
       {toast && <Toast {...toast} />}
 
       <PageHeader

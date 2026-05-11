@@ -52,7 +52,7 @@ export default function Acomptes({ user }) {
   const totalMonth   = acomptes.filter(a => a.date?.startsWith(currentMonth)).reduce((s, a) => s + Number(a.montant), 0)
 
   return (
-    <div style={{ padding: "24px 20px" }}>
+    <div style={{ padding: "20px 16px" }}>
       {toast && <Toast {...toast} />}
       <PageHeader
         title="Acomptes"
