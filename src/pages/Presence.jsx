@@ -91,7 +91,8 @@ export default function Presence({ user, settings }) {
 
       <PageHeader
         title="Présence"
-        subtitle={new Date().toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}
+        subtitle={new Date().toLocaleDateString("fr-FR", { weekday:"long", day:"numeric", month:"long", year:"numeric" })}
+  action={<Btn onClick={() => exportPresence(workers, presence, TODAY.slice(0,7))} color="#10b981" style={{ fontSize:13, padding:"10px 14px" }}>↓ Excel</Btn>}
       />
 
       {/* Stats */}

@@ -90,6 +90,7 @@ export default function Paie({ settings }) {
         ))}
       </div>
 
+      <Btn onClick={() => exportFicheDePaie(workers, presence, acomptes, settings, month)} style={{ width:"100%", marginBottom:20 }}>↓ Fiches de paie — {monthLabel(month)}</Btn>
       {/* Totals */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 24 }}>
         <Card style={{ padding: "16px 18px" }}>

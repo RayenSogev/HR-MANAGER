@@ -58,7 +58,12 @@ export default function Conges({ user }) {
       <PageHeader
         title="Congés"
         subtitle={`${conges.length} enregistrés`}
-        action={<Btn onClick={() => setModal(true)}>+ Nouveau</Btn>}
+        action={
+  <div style={{ display:"flex", gap:8 }}>
+    <Btn onClick={() => exportConges(workers, conges)} color="#f59e0b" style={{ fontSize:13, padding:"10px 14px" }}>↓ Excel</Btn>
+    <Btn onClick={() => setModal(true)}>+ Nouveau</Btn>
+  </div>
+}
       />
 
       {/* Filter */}

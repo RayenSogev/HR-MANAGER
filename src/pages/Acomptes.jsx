@@ -58,7 +58,12 @@ export default function Acomptes({ user }) {
       <PageHeader
         title="Acomptes"
         subtitle={`${acomptes.length} enregistrés`}
-        action={<Btn onClick={() => setModal(true)}>+ Nouveau</Btn>}
+        action={
+  <div style={{ display:"flex", gap:8 }}>
+    <Btn onClick={() => exportAcomptes(workers, acomptes, TODAY.slice(0,7))} color="#7c3aed" style={{ fontSize:13, padding:"10px 14px" }}>↓ Excel</Btn>
+    <Btn onClick={() => setModal(true)}>+ Nouveau</Btn>
+  </div>
+}
       />
 
       {/* Monthly total */}
